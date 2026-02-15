@@ -1,5 +1,4 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import "./EnvelopePage.css";
 import heartSticker from "../img/heart1.png";
 import heart4 from "../img/heart1.png"; 
