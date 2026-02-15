@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.envelope-page {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* ---------------- POLAROIDS ---------------- */
+
+.polaroid {
+  position: absolute;
+  width: 180px;
+  margin-left: 120px;
+  margin-top: -122px;
+  padding: 8px;
+  transform: rotate(-6deg);
+  background: white;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+  z-index: 3;
+}
+
+.p1 {
+  top: 200px;
+  left: 22%;
+  transform: rotate(-6deg);
+}
+
+.p2 {
+  top: 360px;
+  left: 25%;
+  transform: rotate(-40deg);
+}
+
+.p3 {
+  top: 520px;
+  left: 20%;
+  transform: rotate(-3deg);
+}
+
+/* ---------------- ENVELOPE WRAPPER ---------------- */
+
+.envelope-wrapper {
+  position: relative;
+  width: 420px;     /* SAME width for both */
+  margin-left: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(6deg);
+  z-index: 2;
+}
+
+/* ---------------- LETTER ---------------- */
+
+.letter {
+  position: absolute;
+  bottom: 120px;    /* sits right above envelope */
+  width: 350px;
+  max-height: 340px;
+  overflow-y: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+  font-family: Georgia, serif;
+  font-size: 15px;
+  line-height: 1.8;
+  z-index: 2;
+  filter: drop-shadow(0 25px 40px rgba(0,0,0,0.25));
+}
+
+/* Scroll style */
+.letter::-webkit-scrollbar {
+  width: 6px;
+}
+
+.letter::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+
+/* ---------------- ENVELOPE IMAGE ---------------- */
+
+.envelope-img {
+    top: 80px;
+  width: 720px;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+
+/* SCATTERED CORNER HEARTS */
+.scatter1 {
+  position: absolute;
+  width: 32px;
+  z-index: 3;   /* above background, below main stickers */
+  opacity: 0.95;
+}
+
+/* -------- TOP LEFT CORNER -------- */
+.s1 { top: -80px; left: 160px; transform: rotate(-15deg); }
+.s2 { top: -160px; left: 510px; transform: rotate(20deg); }
+.s3 { top: 190px; left: 810px; transform: rotate(-25deg); }
+.s4 { top: 60px; left: 490px; transform: rotate(15deg); }
+.s9 { top: 450px; left: 670px; transform: rotate(15deg); }
+
+/* -------- BOTTOM RIGHT CORNER -------- */
+.s5 { bottom: 280px; right: 750px; transform: rotate(-10deg); }
+.s6 { bottom: 60px; right: 490px; transform: rotate(25deg); }
+.s7 { bottom: 40px; right: 900px; transform: rotate(-18deg); }
+.s8 { bottom: 20px; right: 620px; transform: rotate(12deg); }
