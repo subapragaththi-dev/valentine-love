@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Valentine from "./pages/Valentine";
-import Photos from "./pages/Temp";
-import CollagePage from "./pages/CollagePage";
-import EnvelopePage from "./pages/EnvelopePage";
+import Valentine from "../pages/Valentine";
+import Photos from "../pages/Photos";
+import CollagePage from "../pages/CollagePage";
+import EnvelopePage from "../pages/EnvelopePage";
 
 function App() {
   return (
