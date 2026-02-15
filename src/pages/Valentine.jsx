@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "../pages/valentine1.css";
+import "./Valentine.css";
 
 const ValentinePage1 = () => {
   const navigate = useNavigate();

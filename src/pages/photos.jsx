@@ -1,5 +1,5 @@
 import React from "react";
-import "./photos.css";
+import "./Photos.css";
 
 import coupleImg from "../img/photo.jpeg";
 import cdImg from "../img/cd1.png";
