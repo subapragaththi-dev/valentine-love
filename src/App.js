@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Valentine from "./pages/Valentine";
-import Photos from "./pages/Photos";
+import Photos from "./pages/Temp";
 import CollagePage from "./pages/CollagePage";
 import EnvelopePage from "./pages/EnvelopePage";
 
